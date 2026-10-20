@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<!--HEAD-START-->
+<title>Chromafit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Chromafit analiza tu colorimetría con IA para ayudarte a escoger la ropa que mejor combina contigo. Concepción, Chile.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<!--HEAD-END-->
+</head>
+<body>
+<!--BODY-START-->
+
+<!-- =========================================================
+     NAVBAR · fija, se vuelve translúcida al hacer scroll
+     ========================================================= -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#inicio" class="brand" aria-label="Chromafit, ir al inicio">
+      <img src="images/logo.png" alt="Logo Chromafit" width="44" height="44">
+      <span>Chromafit</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Principal">
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#paletas" class="nav-link">Paletas</a>
+      <a href="#testimonios" class="nav-link">Testimonios</a>
+      <a href="#nosotros" class="nav-link">Nosotros</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="#contacto" class="btn btn-primary btn-sm nav-cta">Analiza tu color</a>
+    </nav>
+    <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- =========================================================
+     1 · HERO
+     ========================================================= -->
+<section class="hero" id="inicio">
+  <div class="particles" id="particles" aria-hidden="true"></div>
+  <div class="hero-bg-glow" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <p class="label hero-label"><span aria-hidden="true">✦</span> Chromafit · Colorimetría con inteligencia artificial</p>
+      <h1 class="hero-title">Del tablero de inspiración a tu <span class="text-gradient">guardarropa ideal</span> en segundos</h1>
+      <p class="hero-subtitle">Analizamos tu colorimetría para ayudarte a escoger la ropa que mejor combina contigo, creando un puente directo entre la inspiración digital y la compra real.</p>
+      <div class="hero-ctas">
+        <a href="#contacto" class="btn btn-primary btn-pulse">Descubre tu paleta</a>
+        <a href="#como-funciona" class="btn btn-outline">Cómo funciona</a>
+      </div>
+      <ul class="hero-meta" aria-label="Datos clave">
+        <li><strong>12</strong> estaciones de color</li>
+        <li><strong>3</strong> subtonos: cálido, frío y neutro</li>
+        <li><strong>Concepción</strong>, Chile</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <img src="images/hero_visual.webp" alt="Logo de Chromafit sobre fondo oscuro, con percheros y telas de seda en movimiento" class="hero-img" width="1134" height="846">
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     2 · SOCIAL PROOF
+     ========================================================= -->
+<section class="proof" aria-labelledby="proof-title">
+  <div class="container">
+    <h2 id="proof-title" class="sr-only">Cifras de Chromafit</h2>
+    <div class="stats">
+      <div class="stat"><span class="stat-num" data-count="2500" data-prefix="+">2500</span><span class="stat-label">análisis de colorimetría</span></div>
+      <div class="stat"><span class="stat-num" data-count="40" data-prefix="+">40</span><span class="stat-label">tiendas locales vinculadas</span></div>
+      <div class="stat"><span class="stat-num" data-count="18000" data-prefix="+">18000</span><span class="stat-label">prendas en catálogo</span></div>
+      <div class="stat"><span class="stat-num" data-count="94" data-suffix="%">94</span><span class="stat-label">precisión en subtono</span></div>
+    </div>
+    <p class="proof-caption label">Tiendas aliadas en el Gran Concepción</p>
+    <ul class="partners" aria-label="Tiendas aliadas (nombres de ejemplo)">
+      <li style="--c:#C4704F">Biobío Atelier</li>
+      <li style="--c:#8FA58A">Casa Lienzo</li>
+      <li style="--c:#D49A9A">Paseo Tela</li>
+      <li style="--c:#C9A23F">Ropero Sur</li>
+      <li style="--c:#A79CC4">Hilo Penco</li>
+    </ul>
+    <p class="demo-note">Cifras y tiendas de ejemplo para este ejercicio académico.</p>
+  </div>
+</section>
+
+<!-- =========================================================
+     3 · SERVICIOS · flip cards
+     ========================================================= -->
+<section class="section" id="servicios" aria-labelledby="servicios-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="label">Servicios y productos</p>
+      <h2 id="servicios-title">Todo lo que necesitas para vestir tu color</h2>
+      <p class="section-sub">Pasa el cursor sobre cada tarjeta, o tócala en el celular, para ver el detalle.</p>
+    </header>
+    <div class="services-grid">
+
+      <article class="service-card-flip reveal" tabindex="0">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <img src="images/service_1.webp" alt="Mano sosteniendo un celular que escanea una prenda y encuentra coincidencias de inspiración" class="service-image" loading="lazy" width="1134" height="846">
+            <div class="service-overlay"><span class="service-icon" aria-hidden="true">◐</span><h3 class="service-title-front">App machine learning</h3></div>
+          </div>
+          <div class="service-card-back glass-card">
+            <h3 class="service-title-back">App machine learning</h3>
+            <p class="service-description">Sube una selfie con luz natural. Nuestro modelo detecta tu subtono, contraste e intensidad, y te asigna una de las 12 estaciones de color.</p>
+            <div class="service-features"><span class="feature-tag">Visión por computador</span><span class="feature-tag">Subtono</span><span class="feature-tag">iOS y Android</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card-flip reveal" tabindex="0">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <img src="images/service_2.webp" alt="Panel que conecta looks de inspiración con prendas disponibles en tiendas" class="service-image" loading="lazy" width="800" height="600">
+            <div class="service-overlay"><span class="service-icon" aria-hidden="true">⌖</span><h3 class="service-title-front">Vinculación con catálogos locales</h3></div>
+          </div>
+          <div class="service-card-back glass-card">
+            <h3 class="service-title-back">Vinculación con catálogos locales</h3>
+            <p class="service-description">Cruzamos tu paleta con el stock de tiendas de la zona. Ves la prenda, su precio y dónde comprarla, sin salir de la app.</p>
+            <div class="service-features"><span class="feature-tag">Comercio local</span><span class="feature-tag">Stock en vivo</span><span class="feature-tag">Gran Concepción</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card-flip reveal" tabindex="0">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <img src="images/service_3.webp" alt="Índice de color personal con rostros por estación y muestras de tela" class="service-image" loading="lazy" width="800" height="600">
+            <div class="service-overlay"><span class="service-icon" aria-hidden="true">◉</span><h3 class="service-title-front">Análisis de colorimetría personalizada</h3></div>
+          </div>
+          <div class="service-card-back glass-card">
+            <h3 class="service-title-back">Análisis de colorimetría personalizada</h3>
+            <p class="service-description">Un informe con tu estación, los tonos que te iluminan, los que conviene evitar cerca del rostro y tus neutros base.</p>
+            <div class="service-features"><span class="feature-tag">12 estaciones</span><span class="feature-tag">Contraste</span><span class="feature-tag">Informe PDF</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card-flip reveal" tabindex="0">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <img src="images/service_4.webp" alt="Persona señalando un panel con tres conjuntos de ropa marcados Match 96% y su perfil de estilo Otoño cálido" class="service-image" loading="lazy" width="1400" height="1046">
+            <div class="service-overlay"><span class="service-icon" aria-hidden="true">✦</span><h3 class="service-title-front">Recomendaciones personalizadas de estilo</h3></div>
+          </div>
+          <div class="service-card-back glass-card">
+            <h3 class="service-title-back">Recomendaciones personalizadas de estilo</h3>
+            <p class="service-description">Guarda looks de Pinterest o Instagram y te mostramos cómo llevarlos a tu paleta, con un puntaje de compatibilidad para cada conjunto.</p>
+            <div class="service-features"><span class="feature-tag">Moodboard</span><span class="feature-tag">Match %</span><span class="feature-tag">Ocasiones</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card-flip reveal" tabindex="0">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <img src="images/service_5.webp" alt="Videollamada en vivo en la que una asesora prueba una tela terracota junto al rostro de una clienta" class="service-image" loading="lazy" width="1400" height="1046">
+            <div class="service-overlay"><span class="service-icon" aria-hidden="true">◎</span><h3 class="service-title-front">Servicio y asesoría de imagen virtual</h3></div>
+          </div>
+          <div class="service-card-back glass-card">
+            <h3 class="service-title-back">Servicio y asesoría de imagen virtual</h3>
+            <p class="service-description">Sesión por videollamada con una asesora de imagen. Hace la prueba de telas (draping) en vivo y arma contigo un plan de compra.</p>
+            <div class="service-features"><span class="feature-tag">Draping en vivo</span><span class="feature-tag">45 minutos</span><span class="feature-tag">Plan de compra</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="service-card-flip reveal" tabindex="0">
+        <div class="service-card-inner">
+          <div class="service-card-front">
+            <img src="images/service_6.webp" alt="Armario digital con prendas clasificadas y conjuntos sugeridos" class="service-image" loading="lazy" width="800" height="600">
+            <div class="service-overlay"><span class="service-icon" aria-hidden="true">▤</span><h3 class="service-title-front">Producto de armario digital</h3></div>
+          </div>
+          <div class="service-card-back glass-card">
+            <h3 class="service-title-back">Producto de armario digital</h3>
+            <p class="service-description">Fotografía tu ropa y la ordenamos por color y ocasión. Te avisamos qué prendas ya combinan entre sí antes de comprar algo nuevo.</p>
+            <div class="service-features"><span class="feature-tag">Inventario</span><span class="feature-tag">Combinaciones</span><span class="feature-tag">Compra consciente</span></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     4 · PORTFOLIO · paletas por estación + cómo funciona
+     ========================================================= -->
+<section class="section section-alt" id="paletas" aria-labelledby="paletas-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="label">Portafolio de paletas</p>
+      <h2 id="paletas-title">Cuatro estaciones, doce paletas</h2>
+      <p class="section-sub">Cada estación se divide en tres según el rasgo dominante. Estas son las paletas base con las que trabaja nuestro análisis.</p>
+    </header>
+    <div class="palette-grid">
+      <article class="glass-card palette-card reveal">
+        <div class="swatches" aria-hidden="true"><i style="--s:#F2B88C"></i><i style="--s:#E07A62"></i><i style="--s:#F0D16B"></i><i style="--s:#9CC59A"></i><i style="--s:#F4E3C8"></i></div>
+        <h3>Primavera</h3>
+        <dl class="palette-traits"><div><dt>Subtono</dt><dd>Cálido</dd></div><div><dt>Intensidad</dt><dd>Brillante</dd></div><div><dt>Contraste</dt><dd>Medio</dd></div></dl>
+        <p class="palette-types">Cálida · Clara · Brillante</p>
+      </article>
+      <article class="glass-card palette-card reveal">
+        <div class="swatches" aria-hidden="true"><i style="--s:#A79CC4"></i><i style="--s:#9DB4C8"></i><i style="--s:#D49A9A"></i><i style="--s:#B9C4C9"></i><i style="--s:#7D8FA6"></i></div>
+        <h3>Verano</h3>
+        <dl class="palette-traits"><div><dt>Subtono</dt><dd>Frío</dd></div><div><dt>Intensidad</dt><dd>Suave</dd></div><div><dt>Contraste</dt><dd>Bajo</dd></div></dl>
+        <p class="palette-types">Fría · Clara · Suave</p>
+      </article>
+      <article class="glass-card palette-card reveal">
+        <div class="swatches" aria-hidden="true"><i style="--s:#C4704F"></i><i style="--s:#B8875B"></i><i style="--s:#6F7448"></i><i style="--s:#C9A23F"></i><i style="--s:#7A2E3A"></i></div>
+        <h3>Otoño</h3>
+        <dl class="palette-traits"><div><dt>Subtono</dt><dd>Cálido</dd></div><div><dt>Intensidad</dt><dd>Apagada</dd></div><div><dt>Contraste</dt><dd>Medio</dd></div></dl>
+        <p class="palette-types">Cálida · Profunda · Suave</p>
+      </article>
+      <article class="glass-card palette-card reveal">
+        <div class="swatches" aria-hidden="true"><i style="--s:#1F2A44"></i><i style="--s:#2F5D6B"></i><i style="--s:#6E3B5C"></i><i style="--s:#E9E6EE"></i><i style="--s:#B0243A"></i></div>
+        <h3>Invierno</h3>
+        <dl class="palette-traits"><div><dt>Subtono</dt><dd>Frío</dd></div><div><dt>Intensidad</dt><dd>Brillante</dd></div><div><dt>Contraste</dt><dd>Alto</dd></div></dl>
+        <p class="palette-types">Fría · Profunda · Brillante</p>
+      </article>
+    </div>
+
+    <div class="how" id="como-funciona">
+      <h3 class="how-title reveal">Cómo funciona</h3>
+      <ol class="steps">
+        <li class="glass-card step reveal"><span class="step-num">1</span><h4>Sube tu selfie</h4><p>Con luz natural, sin maquillaje y sin filtros. Tarda menos de un minuto.</p></li>
+        <li class="glass-card step reveal"><span class="step-num">2</span><h4>Recibe tu estación</h4><p>El modelo mide subtono, contraste e intensidad y genera tu paleta personal.</p></li>
+        <li class="glass-card step reveal"><span class="step-num">3</span><h4>Compra con tu color</h4><p>Ves prendas de tiendas locales que calzan con tu paleta y lo que ya tienes en tu armario.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     5 · TESTIMONIOS
+     ========================================================= -->
+<section class="section" id="testimonios" aria-labelledby="testimonios-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="label">Testimonios</p>
+      <h2 id="testimonios-title">Lo que cambia cuando vistes tu color</h2>
+      <p class="demo-note">Testimonios de ejemplo para este ejercicio académico.</p>
+    </header>
+    <div class="testimonials">
+      <figure class="glass-card testimonial reveal">
+        <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>Descubrí que soy Otoño profundo. Dejé de comprar negro para todo y ahora mi ropa de oficina combina sola.</blockquote>
+        <figcaption><span class="avatar" aria-hidden="true">CM</span><span><strong>Camila M.</strong><small>Ingeniera, Concepción</small></span></figcaption>
+      </figure>
+      <figure class="glass-card testimonial reveal">
+        <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>El armario digital me mostró veinte combinaciones con prendas que ya tenía. Este mes no compré nada y me vestí mejor.</blockquote>
+        <figcaption><span class="avatar" aria-hidden="true">JR</span><span><strong>Javiera R.</strong><small>Estudiante, Talcahuano</small></span></figcaption>
+      </figure>
+      <figure class="glass-card testimonial reveal">
+        <div class="stars" aria-label="5 de 5 estrellas">★★★★★</div>
+        <blockquote>La asesoría virtual con draping en vivo fue clave. Ahora sé qué tonos usar en reuniones por cámara.</blockquote>
+        <figcaption><span class="avatar" aria-hidden="true">DP</span><span><strong>Diego P.</strong><small>Abogado, San Pedro de la Paz</small></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     6 · CONTENIDO · guía de color y redes
+     ========================================================= -->
+<section class="section section-alt" id="contenido" aria-labelledby="contenido-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="label">Guía de color</p>
+      <h2 id="contenido-title">Aprende a leer tu propio color</h2>
+    </header>
+    <div class="posts">
+      <article class="glass-card post reveal">
+        <span class="post-tag">Subtono</span>
+        <h3>La prueba de las venas y por qué no basta</h3>
+        <p>Qué miran de verdad los asesores de imagen para distinguir un subtono cálido de uno frío.</p>
+        <span class="post-meta">Lectura de 4 min</span>
+      </article>
+      <article class="glass-card post reveal">
+        <span class="post-tag">Armario</span>
+        <h3>Cinco neutros que reemplazan al negro</h3>
+        <p>Camel, marfil, petróleo, gris perla y chocolate: cuál le sirve a cada estación.</p>
+        <span class="post-meta">Lectura de 6 min</span>
+      </article>
+      <article class="glass-card post reveal">
+        <span class="post-tag">Compras</span>
+        <h3>Cómo usar tu paleta en una tienda física</h3>
+        <p>Una rutina de tres pasos para decidir frente al espejo del probador.</p>
+        <span class="post-meta">Lectura de 3 min</span>
+      </article>
+    </div>
+    <ul class="socials" aria-label="Redes sociales">
+      <li><a href="#" class="social">Instagram</a></li>
+      <li><a href="#" class="social">TikTok</a></li>
+      <li><a href="#" class="social">Pinterest</a></li>
+      <li><a href="#" class="social">YouTube</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- =========================================================
+     7 · SOBRE NOSOTROS
+     ========================================================= -->
+<section class="section" id="nosotros" aria-labelledby="nosotros-title">
+  <div class="container about-grid">
+    <div class="about-media reveal">
+      <img src="images/about_image.png" alt="Ilustración de una persona rodeada de telas de distintos colores, como en una prueba de draping" loading="lazy" width="900" height="900">
+    </div>
+    <div class="about-copy reveal">
+      <p class="label">Sobre Chromafit</p>
+      <h2 id="nosotros-title">Nacimos en Concepción, frente al espejo del probador</h2>
+      <p>Chromafit partió de una frustración común: guardar cientos de looks en Pinterest y no saber cuáles nos quedan bien. La colorimetría tenía la respuesta, pero una asesoría presencial era cara y difícil de agendar.</p>
+      <p>Por eso juntamos asesoría de imagen y aprendizaje automático en una app. Lee tu color, entiende tu inspiración y te lleva a prendas reales de tiendas cercanas.</p>
+      <p>Queremos que comprar ropa sea una decisión informada, que aproveche lo que ya tienes y que apoye al comercio local del sur de Chile.</p>
+      <ul class="about-values">
+        <li>Color con base técnica</li>
+        <li>Comercio local</li>
+        <li>Compra consciente</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     8 · CTA FINAL + CONTACTO
+     ========================================================= -->
+<section class="cta-final" id="contacto" aria-labelledby="cta-title">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="container cta-grid">
+    <div class="cta-copy reveal">
+      <h2 id="cta-title">¿Cuál es tu estación de color?</h2>
+      <p class="cta-sub">Deja tus datos y te avisamos cuando abra la beta de la app. Las primeras 300 personas reciben su análisis completo sin costo.</p>
+      <address class="contact-info">
+        <span class="label">Dirección</span>
+        <span>Ainavillo 456, Concepción, Chile</span>
+      </address>
+    </div>
+    <form class="glass-card contact-form reveal" id="contact-form" novalidate>
+      <div class="field">
+        <label for="f-name">Nombre</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Tu nombre">
+      </div>
+      <div class="field">
+        <label for="f-email">Correo</label>
+        <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="tu@correo.cl">
+      </div>
+      <div class="field">
+        <label for="f-interest">¿Qué te interesa?</label>
+        <select id="f-interest" name="interest">
+          <option>Análisis de colorimetría personalizada</option>
+          <option>Servicio y asesoría de imagen virtual</option>
+          <option>Producto de armario digital</option>
+          <option>Vinculación con catálogos locales (soy tienda)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary btn-pulse btn-block">Quiero mi análisis</button>
+      <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- =========================================================
+     9 · FOOTER
+     ========================================================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#inicio" class="brand"><img src="images/logo.png" alt="" width="40" height="40"><span>Chromafit</span></a>
+      <p>Del tablero de inspiración a tu guardarropa ideal en segundos.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Servicios</h3>
+      <a href="#servicios">App machine learning</a>
+      <a href="#servicios">Análisis de colorimetría</a>
+      <a href="#servicios">Asesoría de imagen virtual</a>
+      <a href="#servicios">Armario digital</a>
+    </div>
+    <div class="footer-col">
+      <h3>Recursos</h3>
+      <a href="#paletas">Paletas por estación</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#contenido">Guía de color</a>
+    </div>
+    <div class="footer-col">
+      <h3>Empresa</h3>
+      <a href="#nosotros">Sobre Chromafit</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#">Términos y privacidad</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> Chromafit. Todos los derechos reservados.</p>
+    <p>Ainavillo 456, Concepción, Chile</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<!--BODY-END-->
+</body>
+</html>
